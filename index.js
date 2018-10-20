@@ -26,7 +26,6 @@ function currentLine(katzDeliLine){
       }
       return message;
     }
-  }
 }
 
 /*
