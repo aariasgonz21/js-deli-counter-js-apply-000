@@ -24,6 +24,7 @@ function currentLine(katzDeliLine){
       punctuation += (i == katzDeliLine.length -1)? '' : ','
       message += `The line is currently: ${i+ 1}. ${katzDeliLine[i]}` + punctuation;
       }
+      return message;
     }
   }
 }
