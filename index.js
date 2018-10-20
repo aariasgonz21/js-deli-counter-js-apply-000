@@ -13,7 +13,7 @@ function nowServing(katzDeliLine){
 }
 
 function currentLine(katzDeliLine){
-  let message = ``;
+  let list = ``;
   let punctuation = ``;
   
   if(katzDeliLine.length === 0){
@@ -23,7 +23,7 @@ function currentLine(katzDeliLine){
   else{
     for(var i = 0; i < katzDeliLine.length; i++){
       punctuation += (i == katzDeliLine.length -1)? '' : ','
-      message += `The line is currently: ${i+ 1}. ${katzDeliLine[i]}` + punctuation;
+      list += ` ${i+ 1}. ${katzDeliLine[i]}` + punctuation;
       }
     return message;
   }
