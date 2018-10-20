@@ -24,7 +24,7 @@ function currentLine(katzDeliLine){
       let punctuation = (i === katzDeliLine.length - 1)? '' : ',';
       list += ` ${i+ 1}. ${katzDeliLine[i]} ${punctuation}`
       }
-    return `The line is currently: ${list}`;
+    return `The line is currently:${list}`;
   }
 }
 
