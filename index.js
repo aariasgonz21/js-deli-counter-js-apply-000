@@ -22,7 +22,7 @@ function currentLine(katzDeliLine){
   
   else{
     for(var i = 0; i < katzDeliLine.length; i++){
-      punctuation += (i == katzDeliLine.length -1)? '' : ','
+      punctuation += (i === katzDeliLine.length -1)? '' : ','
       list += ` ${i+ 1}. ${katzDeliLine[i]}` + punctuation;
       }
     return `The line is currently: ${list}`;
